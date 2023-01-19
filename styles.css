@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #230C33;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li, a, button {
+    font-family: "Apparel", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header h1 {
+    user-select: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, antiquewhite 30%, #B27C66);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: antiquewhite;
+    padding-left: 10%;
+    font-style: italic;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transform: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #CAA8F5;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(178, 124, 102, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(178, 124, 102, 0.7);
+}
+
+/* #welcome {
+    background-color: #B27C66;
+    background-image: url(images/personal/ottawa_landscape.jpg); 
+    width: 100%; 
+    height: 100%; 
+    background-size: contain;
+    color: white;
+} */
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1
+}
+
+.image-gallery .column > img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .image-gallery {
+      flex-direction: row;
+    }
+
+    .container {
+        float: right;
+        width: 40%;
+    }
+}
